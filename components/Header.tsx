@@ -13,7 +13,19 @@ export default function Header() {
           <Star className="h-6 w-6 text-[#f0c766]" />
           <span>{siteName}</span>
         </Link>
-        <p className="text-sm text-creme/90 sm:text-base">Webshop in de maak</p>
+        <div className="flex items-center gap-4 sm:gap-6">
+          <p className="hidden text-sm text-creme/90 sm:block sm:text-base">
+            Webshop in de maak
+          </p>
+          <nav aria-label="Hoofdmenu">
+            <Link
+              href="/over-ons"
+              className="rounded px-1 py-2 text-base font-bold underline-offset-4 hover:underline sm:text-lg"
+            >
+              Over ons
+            </Link>
+          </nav>
+        </div>
       </div>
       <div
         aria-hidden="true"
